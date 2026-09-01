@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Ex1{
     public static void main(String [] args){
         System.out.println("Hello World!");
@@ -22,5 +24,36 @@ public class Ex1{
          * documentation comment to explain to the reader what is happening in the code
          */
         
+        //Casting - turning one type to another. from a bigger type to a smaller type we do not need to do anything. but from a smaller type to a bigger type we need to do int myInt = (bigger type) myBiggerType
+        //if we want int to be a double we need to add (int) before we assign it myDouble
+        double myDouble = 9.78d;
+        int myInt = (int) myDouble;
+        System.out.println(myDouble);
+        System.out.println(myInt);
+
+        double myDoub = 10.512341d;
+        float myFloat = 19.99f;
+        byte myByte = 10;
+
+        short myShort = (short) myDoub;
+        int myInt2 = (int) myFloat;
+        //since byte is smaller than long we can just assign it to long easily.
+        long myLong = myByte;
+
+        System.out.println(myShort);
+        System.out.println(myInt2);
+        System.out.println(myLong);
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter an integer:");
+        int number = input.nextInt();
+        System.out.print("You entered " + number);
+
+        //closing the scanner object
+        input.close();
+        //we can use nextLong(), nextDouble(), nextFloat(), etc.
+
+
     }
 }
