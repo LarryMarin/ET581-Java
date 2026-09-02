@@ -12,5 +12,6 @@ public class Ex6 {
         myDouble = (double) myInt/10;
 
         System.out.println(myInt + " divided by 10 is equal to: " + myDouble);
+        input.close();
     }
 }
