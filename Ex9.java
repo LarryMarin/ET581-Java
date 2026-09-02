@@ -7,6 +7,7 @@ public class Ex9 {
         System.out.print("Please enter the temperature in Celsius: ");
         celsius = input.nextDouble();
         fahrenheit = celsius * 9/5 + 32;
+        //this prints out only one decimal place: %.1f
         System.out.printf("%.1f C = %.1f F", celsius, fahrenheit);
 
         input.close();
