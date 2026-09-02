@@ -12,7 +12,6 @@ class Ex8{
         System.out.println("Second digit: " + var.charAt(1));
         System.out.println("Third digit: " + var.charAt(2));
         System.out.println("Fourth1 digit: " + var.charAt(3));
-
         input.close();
     }
 }
