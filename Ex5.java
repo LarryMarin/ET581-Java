@@ -9,5 +9,6 @@ public class Ex5 {
         n = input.nextDouble();
         n *= n;
         System.out.println("The square of n is " + n);
+        input.close();
     }
 }
