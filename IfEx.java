@@ -5,8 +5,10 @@ public class IfEx {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter your age: ");
         age = input.nextInt();
-        if(age >= 18)
+        if(age > 18)
             System.out.println("You can drive.");
+        else
+            System.out.println("You cannot drive.");
         input.close();
     }   
 }
