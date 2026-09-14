@@ -34,7 +34,17 @@ class StrExamples{
         System.out.println(text.substring(10,14));
         System.out.println(text.substring(15, 21));
 
-        
+        System.out.print("Enter a numerator: ");
+        int numerator = input.nextInt();
+        System.out.print("Enter a denominator: ");
+        int denominator = input.nextInt();
+        double dividend = (double) numerator/denominator;
+        System.out.printf("%.2f", dividend);
+
+        System.out.println("Enter money: $");
+        double money = input.nextDouble();
+        double quarters = 
+            
         input.close();
     }
 }
