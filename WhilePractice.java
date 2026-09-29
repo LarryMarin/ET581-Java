@@ -146,6 +146,27 @@ class ExWhile{
                 n1++;
             }
         }
+        
+        //Ex14
+        int maxVal = 0, minVal = 0;
+        do{
+            System.out.print("Enter a minimum value between 1 and 100: ");
+            minVal = input.nextInt();
+            System.out.print("Enter a maximum value between 1 and 100: ");
+            maxVal = input.nextInt();
 
+            if(minVal > 100 || minVal <=0 || maxVal >100 || maxVal <= 0){
+                System.out.println("Values must be within specified range.");
+            }
+            else if(maxVal < minVal){
+                System.out.println("Maximum value must be greater than minimum value.");
+            }
+        }while(minVal > 100 || minVal <=0 || maxVal >100 || maxVal <= 0 || maxVal < minVal);
+        i = maxVal;
+        while(i >= minVal){
+            System.out.print(i + " ");
+            i--;
+        }
+        System.out.println();
     }
 }
