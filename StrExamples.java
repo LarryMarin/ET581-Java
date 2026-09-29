@@ -43,7 +43,7 @@ class StrExamples{
 
         System.out.println("Enter money: $");
         double money = input.nextDouble();
-        double quarters = 
+        // double quarters = 
             
         input.close();
     }

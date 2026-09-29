@@ -13,7 +13,7 @@ public class IfEx {
         else if(age < 0){
             System.out.println("You are an idiot");
         }
-        else (age>=0 && age <=18){
+        else{
             System.out.println("You cannot drive.");
         }
         input.close();

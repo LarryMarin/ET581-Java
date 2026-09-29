@@ -42,12 +42,12 @@ public class IfElsePractice {
             System.out.println(userInt + " is a multiple of 3.");
         }
 
-        System.out.print("Do you wish to go to the movies (1/0)?");
-        int intA = input.nextInt();
-        System.out.print("Do you wish to go to dinner (1/0)?");
-        int intB = input.nextInt();
+        // System.out.print("Do you wish to go to the movies (1/0)?");
+        // int intA = input.nextInt();
+        // System.out.print("Do you wish to go to dinner (1/0)?");
+        // int intB = input.nextInt();
 
-        boolean a;
+        // boolean a;
         
         input.close();
     }
