@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Hw4_4 {
     public static void main(String [] args){
         // 4. The alternating harmonic series is the following:
@@ -8,5 +10,22 @@ public class Hw4_4 {
         // sum, and be sure you don't use integer division for the individual terms. You'll also need
         // to switch between addition and subtraction. I can think of two ways (one using a
         // variable that changes value and one using a conditional).
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Please enter a number: ");
+        int n = input.nextInt();
+
+        double sum = 0;
+        double sign = 1;
+
+        for (int i = 1; i <= n; i++) {
+            sum += sign / i;
+            sign = -sign;
+        }
+
+        System.out.println("Sum of first " + n + " terms: " + sum);
+        System.out.println("Math.log(2): " + Math.log(2));
+
+        input.close();
     }
 }
