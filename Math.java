@@ -87,6 +87,33 @@ public class Math {
     
     // Add your second and third methods here using the same format.
 
+    // ==========================================
+    // STUDENT CONTRIBUTION TEMPLATE BELOW
+    // ==========================================
+    
+    // ==========================================
+    // Contributed by: [Your Name]
+    // ==========================================
+
+    /**
+     * [Describe what the method does.]
+     *
+     * @param [n] the number that
+     * @return [describe return value]
+     * @throws IllegalArgumentException [when applicable]
+     */
+
+    // ==========================================
+    // Contributed by: Larry Marin
+    // ==========================================
+    /**
+     * Counts how many positive whole numbers divide the given number evenly.
+     * For example, 12 has 6 divisors (1, 2, 3, 4, 6, 12).
+     *
+     * @param n a positive integer to find the divisors of
+     * @return the number of positive divisors of n (including 1 and n itself)
+     * @throws IllegalArgumentException if n is less than or equal to 0
+     */
     public static int countDivisors(int n){
         if(n <=0){
             throw new IllegalArgumentException("Invalid number. Please enter a number greater than 0");
@@ -100,14 +127,30 @@ public class Math {
         return count;
     }
     
-    public static void main(String[] args) {
-        System.out.println(countDivisors(12));
-    }
+    /**
+     * Determines whether a number is an Armstrong number. An Armstrong number
+     * equals the sum of its digits, each raised to the power of the number of
+     * digits. For example, 153 is an Armstrong number because
+     * 1^3 + 5^3 + 3^3 = 153.
+     *
+     * @param a a non-negative integer to check
+     * @return true if a is an Armstrong number, false otherwise
+     * @throws IllegalArgumentException if a is negative
+     */
     public static int isArmstrongNumber(int a){
-        for()
+        
     }
 
-    // public static int isPrime(int p){
+    /**
+     * Determines whether a number is prime. A prime number is a whole number
+     * greater than 1 whose only positive divisors are 1 and itself. For example,
+     * 7 is prime, while 9 is not because it is divisible by 3.
+     *
+     * @param p the integer to check
+     * @return true if p is prime, false otherwise (including for 0, 1, and
+     *         negative numbers, which are not prime)
+     */
+    public static int isPrime(int p){
 
-    // }
+    }
 }
