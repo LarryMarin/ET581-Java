@@ -127,6 +127,9 @@ public class Math {
         return count;
     }
     
+    // ==========================================
+    // Contributed by: Larry Marin
+    // ==========================================
     /**
      * Determines whether a number is an Armstrong number. An Armstrong number
      * equals the sum of its digits, each raised to the power of the number of
@@ -137,20 +140,72 @@ public class Math {
      * @return true if a is an Armstrong number, false otherwise
      * @throws IllegalArgumentException if a is negative
      */
-    public static int isArmstrongNumber(int a){
-        
+    public static boolean isArmstrongNumber(int a){
+        if(a < 0){
+            throw new IllegalArgumentException("The number cannot be negative.");
+        }
+        if(a == 0){
+            return true;
+        }
+
+        int num = a;
+        int digit = 0;
+        int counter = 0;
+        int total = 0;
+
+        while(num!=0){
+            num /= 10;
+            counter+=1;
+        }
+
+        num = a;
+        while(num!=0){
+            digit = num%10;
+            int power = 1;
+            for(int i = 1; i <= counter; i++){
+                power*=digit;
+            }
+            total+=power;
+            num/=10;
+        }
+
+        if(a == total){
+            return true;
+        }
+        else{
+            return false;
+        }
+
     }
 
+    // ==========================================
+    // Contributed by: Larry Marin
+    // ==========================================
     /**
      * Determines whether a number is prime. A prime number is a whole number
      * greater than 1 whose only positive divisors are 1 and itself. For example,
      * 7 is prime, while 9 is not because it is divisible by 3.
      *
-     * @param p the integer to check
-     * @return true if p is prime, false otherwise (including for 0, 1, and
-     *         negative numbers, which are not prime)
+     * @param p the integer to check, which must be 2 or greater
+     * @return true if p is prime, false otherwise
+     * @throws IllegalArgumentException if p is less than 2
      */
-    public static int isPrime(int p){
+    public static boolean isPrime(int p){
+        if(p < 2){
+            throw new IllegalArgumentException("Numbers below 2 are not prime.");
+        }
+        else if(p == 2){
+            return true;
+        }
+        else if(p%2 == 0){
+            return false;
+        }
 
+        for(int i = 3; i * i <= p; i+=2){
+            if(p%i == 0){
+                return false;
+            }
+        }
+        return true;
     }
 }
