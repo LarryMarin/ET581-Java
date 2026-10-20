@@ -33,3 +33,21 @@ public class Main{
         v4.display();
     }
 }
+/*
+public class Main {
+    public static void main(String[] args) {
+        Course c1 = new Course("Jack", 12345678, 80, 90);
+        c1.display();
+
+        Vehicle v1 = new Vehicle();
+        Vehicle v2 = new Vehicle("Honda");
+        Vehicle v3 = new Vehicle("BMW", 50000, 6);
+        Vehicle v4 = new Vehicle("Tesla", 70000);
+
+        v1.display();
+        v2.display();
+        v3.display();
+        v4.display();
+    }
+}
+*/
