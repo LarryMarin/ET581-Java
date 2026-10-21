@@ -8,3 +8,18 @@ class Person{
         from("Beijing");
     }
 }
+
+public class Person {
+    String name;
+
+    Person(String name){
+        this.name = name;
+    }
+    Person(){
+        this.name = "TBD";
+    }
+
+    public void display(){
+        System.out.println("Name: " + this.name);
+    }
+}
