@@ -48,6 +48,11 @@ public class Main {
         v2.display();
         v3.display();
         v4.display();
+
+        System.out.println(v1);
+        System.out.println(v2);
+        System.out.println(v3);
+        System.out.println(v4);  
     }
 }
 */
