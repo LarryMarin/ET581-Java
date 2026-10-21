@@ -45,5 +45,9 @@ class Vehicle {
     void display(){
         System.out.println("Brand: " + name + ", Price: " + price + ", Number of Cylinders = " + numcylinder);
     }
+
+    public String toString(){ //now we can use System.out.println(v1) and it wont print the memory address. It will return the following string.
+        return "Brand: " + name + ", Price: " + price + ", Number of Cylinders = " + numcylinder;
+    }
 }
 */
