@@ -48,6 +48,22 @@ public class Main {
         v2.display();
         v3.display();
         v4.display();
+
+        System.out.println(v1);
+        System.out.println(v2);
+        System.out.println(v3);
+        System.out.println(v4);  
+    }
+}
+
+public class main {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.display();
+        Student s1 = new Student("David", 12);
+        s1.display();
+        Person p = new Person("Tom");
+        p.display();
     }
 }
 */
