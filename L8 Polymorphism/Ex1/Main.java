@@ -1,3 +1,9 @@
+import Ex1.Coin;
+import Ex1.Dime;
+import Ex1.Nickel;
+import Ex1.Penny;
+import Ex1.Quarter;
+
 public class Main {
     public static void main(String[] args) {
         Money[] a = new Money[6];
