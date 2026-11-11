@@ -1,20 +1,8 @@
-import Money;
-
-package Ex1;
-class Coin extends Money {
-    private final int cents;
-
-    Coin(int cents) {
-        this.cents = cents;
+class Coin extends Money{
+    private int cents;
+    Coin(int c){cents = c;}
+    void displayAmount(){
+        System.out.println(cents+" cents");
     }
-
-    @Override
-    public double moneyAmount() {
-        return cents/100.0;
-    }
-
-    @Override
-    public void displayAmount() {
-        System.out.println(cents + " cents.");
-    }
+    double MoneyAmount(){return cents/100.0;}
 }

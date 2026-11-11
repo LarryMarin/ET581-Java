@@ -1,0 +1,3 @@
+interface Spendable{
+    void spend();
+}

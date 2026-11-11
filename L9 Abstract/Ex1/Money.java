@@ -1,5 +1,4 @@
-abstract class Money {
+abstract class Money{
     abstract void displayAmount();
-
-    abstract double moneyAmount();
+    abstract double MoneyAmount();
 }

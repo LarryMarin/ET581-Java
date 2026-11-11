@@ -1,6 +1,3 @@
-package Ex1;
-class Quarter extends Coin {
-    Quarter() {
-        super(25);
-    }
+class Quarter extends Coin{
+    Quarter(){super(25);}
 }

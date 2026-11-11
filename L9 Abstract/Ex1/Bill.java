@@ -1,17 +1,8 @@
-class Bill extends Money {
-    private final int bill;
-
-    Bill(int bill) {
-        this.bill = bill;
+class Bill extends Money{
+    private int dollar;
+    Bill(int d){dollar = d;}
+    void displayAmount(){
+        System.out.println("$"+dollar);
     }
-
-    @Override
-    public double moneyAmount() {
-        return bill;
-    }
-
-    @Override
-    public void displayAmount() {
-        System.out.println("$" + bill);
-    }
+    double MoneyAmount(){return dollar;}
 }

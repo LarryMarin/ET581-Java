@@ -1,6 +1,3 @@
-package Ex1;
 class Nickel extends Coin{
-    Nickel(){
-        super(5);
-    }
+    Nickel(){super(5);}
 }
